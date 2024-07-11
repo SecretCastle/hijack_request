@@ -3,8 +3,8 @@ import { useEffect } from 'react'
 
 function XHRDemo() {
     useEffect(() => {
-        _get('/401').then(res => {
-            console.log(res);
+        _get('/topics').then(res => {
+            console.log(res)
         })
     }, [])
     return <div>XHRDemo</div>
