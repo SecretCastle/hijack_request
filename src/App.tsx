@@ -19,7 +19,7 @@ function App() {
                     <Link to="/xhr">XHR_Demo</Link>
                 </li>
                 <li>
-                    <Link to="/fetch">XHR_Demo</Link>
+                    <Link to="/fetch">Fetch_Demo</Link>
                 </li>
             </ul>
             <div className="content">

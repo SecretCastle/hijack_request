@@ -4,6 +4,7 @@ import App from './App.tsx'
 import './index.css'
 import { BrowserRouter } from 'react-router-dom'
 import '@/core/xhr_hijack.ts'
+import '@/core/fetch_hijack.ts'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.Fragment>

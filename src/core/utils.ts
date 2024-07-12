@@ -1,4 +1,5 @@
 export const formatHeaders = (ipt: string) => {
+    console.log(ipt)
     const _arr = ipt.trim().split('\r\n')
     const result: Record<string, string> = {}
 
