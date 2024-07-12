@@ -16,9 +16,11 @@ const handle = {
                 status: response.status,
                 response: response
             })
+             // TODO 如何阻止原生 fetch 的继续执行 ？不让后续的拦截器拦截到错误
             if (response.status === 401) {
                 header.location && (window.location.href = header.location)
             }
+           
             return response
         })
     }

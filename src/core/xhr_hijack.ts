@@ -35,6 +35,7 @@ const handler = {
                         status: this.status,
                         response: this.responseText
                     })
+                    // TODO 如果401了，如何阻止原生 send 的继续执行。不让后续的拦截器拦截到错误
                     if (this.status === 401) {
                         if (headers.location) {
                             window.location.href = headers.location
