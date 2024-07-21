@@ -26,11 +26,20 @@ $axios.interceptors.response.use(
     }
 )
 
-const _get = (url: string) =>
+const _get = (url: string, params?: Record<string, any>) =>
     $axios.request({
         method: 'get',
         url,
+        params,
         withCredentials: true
     })
 
-export { _get }
+const _post = (url: string, params?: Record<string, any>) =>
+    $axios.request({
+        method: 'post',
+        url,
+        data: params,
+        withCredentials: true
+    })
+
+export { _get, _post }
