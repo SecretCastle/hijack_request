@@ -44,6 +44,8 @@ const handler = {
                 }
             })
 
+            this.setRequestHeader('abc', '123')
+
             // eslint-disable-next-line prefer-rest-params
             return originalSend.apply(this, arguments)
         }
